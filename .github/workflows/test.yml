@@ -111,7 +111,7 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-            mv "$file" apk/十一影视_${{ env.tag }}.apk
+            mv "$file" apk/ShiyiTV_${{ env.tag }}.apk
           done
       - name: Release Note
         if: ${{ env.commit }}
