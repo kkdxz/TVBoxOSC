@@ -33,7 +33,7 @@ jobs:
 #             branchName: main
           - userName: kkdxz
             repoName: TvBox
-            branchName: TakaTvBox
+            branchName: main
     steps:
       - name: Checkout
         uses: actions/checkout@v3
