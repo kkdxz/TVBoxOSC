@@ -21,11 +21,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - userName: q215613905
-            repoName: TVBoxOS
-            branchName: main
-          - userName: takagen99
-            repoName: Box
+          - userName: kkdxz
+            repoName: TvBox
             branchName: main
             java_ver: 17
     steps:
@@ -54,7 +51,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           echo '修改VersionName'
-          if [ "${{ matrix.userName }}" == "takagen99" ]; then
+          if [ "${{ matrix.userName }}" == "kkdxz" ]; then
             # 进行 sed 修改
             sed -i 's/\.concat(buildTime())/ +\"${{ env.tag }}\"/g' app/build.gradle 
           else
